@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color:blanchedalmond;
+            border-style:solid 1px black;
+            padding:15px;
+            border:5px solid black;
+            margin:2px;
+            
+        }
+        th,tr,td{
+            border:1px solid black;
+            padding:5px;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container" id="myform" name="formr">
+        <form id="myform" onSubmit="">
+       fname:<input type="text" id="firstname" placeholder="firstname" required /><br>
+       lname:<input type="text" id="lastname" placeholder="lastname" required /><br>
+       address:<input type="text" id="address" placeholder="address" required /><br>
+       pincode:<input type="number" id="pincode" placeholder="pincode"required/><br>
+       gender:<input type="radio" id="female" name="gender" required/>female
+       <input type="radio" id="male" name="gender" required>male
+       <input type="radio" id="other" name="gender" required/>other<br>
+       choice of food:<input type="checkbox" id="dosa" name="food" placeholder="choice_of_food" required/>dosa
+       <input type="checkbox" id="idly" name="food" placeholder="choice_of_food" required/>idly
+       <input type="checkbox" id="pongal" name="food" placeholder="choice_of_food" required/>pongal
+       <input type="checkbox" id="rice" name="food" placeholder="choice_of_food" required/>rice
+       <input type="checkbox" id="soup" name="food" placeholder="choice_of_food" required/>soup <br>
+       state:<input type="text" id="state" placeholder="state" required/><br>
+       country:<input type="text" id="country" placeholder="country" required/><br>
+       <input type="button" name="" value="add information" id="submit"></input>
+      
+    </form>
+    </div>
+    <table id="tab_info" class="container table">
+        <tr>
+            <td>fname</td>
+            <td>lname</td>
+            <td>address</td>
+            <td>pincode</td>
+           <td>gender</td>
+           <td>choice of food</td>
+            <td>state</td>
+            <td>country</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
